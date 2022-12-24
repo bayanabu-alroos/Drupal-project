@@ -1,0 +1,22 @@
+<div  id="about"  class="bg_Consultation pt-70">
+         <div class="container">
+            <div class="row  ">
+               <!--#about-text start --> 
+               <div class="who_we_area title text-left col-md-4 col-sm-6 col-4pad wow fadeInUp">
+                  <h1 class="c_brown"> {{ content.field_experienced_title.0}} </h1>
+               </div>
+               <div class="who_we_area col-md-8  col-sm-6 col-4pad wow fadeInUp">
+                  <p class="about-bottom-s c_f  wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;"> {{ content.field_experienced_desc.0}}</p>
+                  <div class="top-contact wow fadeInRight text-right" style="visibility: visible; animation-name: fadeInRight;">
+                     <a type="submit" id="#services" href="{{ content.field_experienced_link[0]['#url']|render }}" class="btn btn-default bg_tree wow fadeInUp  js-scroll-trigger " data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">{{ content.field_experienced_link[0]['#title']|render }}</a>
+                  </div>
+               </div>
+            </div>
+            <div class="row  mt-50 bottom_service">
+               <!--#about-text start --> 
+              
+               {{ content.field_experience_lawyers_listing}}
+               
+            </div>
+         </div>
+      </div>

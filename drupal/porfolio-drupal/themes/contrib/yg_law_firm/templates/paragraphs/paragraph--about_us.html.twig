@@ -1,0 +1,22 @@
+  <!-- #About Us Area start -->
+      <div  id="about"  class="bg_gray py-70">
+         <div class="container">
+            <div class="row ">
+               <!--#about-text start --> 
+               <div class="who_we_area title text-left col-md-6 col-sm-6 col-4pad wow fadeInUp">
+                  <h1 class="PT-90">  {{ content.field_about_us_title.0 }} </h1>
+                  <div class="hed_img"> 
+                     <img src="{{ file_url(content.field_about_left_image['#items'].entity.uri.value) }}">
+                  </div>
+                  <p class="about-bottom-s  wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;"> {{ content.field_about_us_desc.0 }}</p>
+                  <div class="top-contact wow fadeInRight text-left" style="visibility: visible; animation-name: fadeInRight;">
+                     <a type="submit" id="#services" href="{{ content.field_about_us_link[0]['#url']|render }}" class="btn btn-default wow fadeInUp  js-scroll-trigger button_about_shadow" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">{{ content.field_about_us_link[0]['#title']|render }}</a>
+                  </div>
+               </div>
+               <div class="who_we_area col-md-6 col-sm-6 col-4pad wow fadeInUp">
+                  <img src="{{ file_url(content.field_about_right_image['#items'].entity.uri.value) }}">
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- End About Us Area -->

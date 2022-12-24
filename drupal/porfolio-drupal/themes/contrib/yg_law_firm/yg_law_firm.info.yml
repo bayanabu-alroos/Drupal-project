@@ -1,0 +1,25 @@
+name: YG Law Firm
+base theme: classy
+type: theme
+description: 'YG Law Firm is a drupal 8 theme perfect for Law related websites'
+core_version_requirement: ^8 || ^9
+
+
+regions:
+  highlighted: Highlighted
+  header: Header
+  primary_menu: Primary menu
+  slider: slider
+  page_title: page title
+  content: Content
+  footer_col_1: footer first
+  footer_col_2: footer second
+  footer_col_3: footer third
+
+libraries:
+  - yg_law_firm/global-styling  
+
+# Information added by Drupal.org packaging script on 2020-08-24
+version: '2.0.0'
+project: 'yg_law_firm'
+datestamp: 1598277553

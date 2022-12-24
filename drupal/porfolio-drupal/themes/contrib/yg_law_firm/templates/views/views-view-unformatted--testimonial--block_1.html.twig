@@ -1,0 +1,15 @@
+<div id="testimonials" class="testimonial_area py-70  bg_testimonial_img wow fadeInUp " style="
+    background-image: url({{directory}});">
+         <div class="container ">
+            <div class="row">
+               <div class="col-md-7 text-left wow fadeInUp">
+                  <h1 class="testimonial_top"> {{ view.getTitle() }}</h1>
+                  <div class="testimonial_carosel">
+                     {% if rows %}
+                       {{ rows }}
+                     {% endif %}
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>

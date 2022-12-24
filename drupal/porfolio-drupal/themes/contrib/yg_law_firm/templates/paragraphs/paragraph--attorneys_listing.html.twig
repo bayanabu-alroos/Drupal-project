@@ -1,0 +1,23 @@
+
+<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp attorneys-bottom">
+   <div class="blog box-radius">
+      <div class="blog-img">
+         <img src="{{ file_url(content.field_about_right_image['#items'].entity.uri.value) }}" alt="">
+      </div>
+      <div class="team-content">
+         <h3>{{ content.field_sub_title.0 }} </h3>
+         <p>{{ content.field_about_us_title.0 }}</p>
+         <div class="team-footer-social">
+            {% if content.field_capability_list.0 %}
+            <a href="{{ content.field_capability_list.0 }}" target="_blank"><i id="social-fb" class="fa fa-facebook fa-2x social"></i></a>
+            {% endif %}
+            {% if content.field_services_title.0 %}
+            <a href="{{ content.field_services_title.0 }}" target="_blank"><i id="social-tw" class="fa fa-twitter fa-2x social"></i></a>
+            {% endif %}
+            {% if content.field_linkedin_url.0 %}
+            <a href="{{ content.field_linkedin_url.0 }}" target="_blank"><i id="social-em" class="fa fa-instagram fa-2x social"></i></a>
+            {% endif %}
+         </div>
+      </div>
+   </div>
+</div>

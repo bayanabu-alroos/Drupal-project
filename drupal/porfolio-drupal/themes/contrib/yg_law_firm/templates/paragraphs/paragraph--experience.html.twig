@@ -1,0 +1,17 @@
+<!--start free consultation Area -->
+<div class="bg_free_img" style="background-image: url( {{ file_url(content.field_experience_bg_image['#items'].entity.uri.value) }} );">
+         <div class="ovrllay-bottom">
+            <div class="container">
+               <div class="row text-center py-90 ">
+                  <div class="title wow fadeInUp">
+                     <h1 class="c_yellow">{{ content.field_experience_header.0 }}</h1>
+                     <p class="c_f"> {{ content.field_experience_desc.0 }}</p>
+                  </div>
+                  <div class="btn-free wow fadeInRight text-center" style="visibility: visible; animation-name: fadeInRight;">
+                     <a type="submit" id="#services" href="{{ content.field_experience_link[0]['#url']|render }}" class="btn btn-default wow fadeInUp  btn_yellow" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">{{ content.field_experience_link[0]['#title']|render }}</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--End free consultation Area -->

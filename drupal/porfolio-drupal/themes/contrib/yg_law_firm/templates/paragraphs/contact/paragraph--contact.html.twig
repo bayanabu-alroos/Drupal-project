@@ -1,0 +1,65 @@
+ <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-heading left">
+                    <h4>{{ content.field_sub_title.0 }}</h4></div>
+                <div class="contact-form-box margin-30px-top">
+                    <div class="no-margin-lr" id="success-contact-form" style="display: none;"></div>
+                        {{ content.field_contact_form.0 }}
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="contact-info-box padding-30px-left sm-no-padding">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="contact-info-section no-padding-top margin-10px-top">
+                                <h4 class="contact-info-section-title"> 
+                                    {{content.field_services_title.0}}
+                                </h4>
+                                <p> 
+                                    {{ content.field_who_we_are_desc.0 }}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="contact-info-section">
+                                <h4> {{content.field_page_title.0}}</h4>
+                                <ul class="list-style-1 no-margin-bottom">
+                                    <li>
+                                        <p><i class="fa fa-phone text-center"></i> <strong>Address:</strong> {{content.field_linkedin_url.0}}</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fa fa-globe text-center"></i> <strong>Phone:</strong>
+                                        <a href="tel:{{ content.field_experience_header.0 }}" class="email_color_site"> 
+                                        {{ content.field_experience_header.0 }}</a></p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fa fa-envelope text-center"></i> <strong>Email:</strong> <a href="mailto:{{content.field_who_we_are_title.0}}" class="email_color_site">{{content.field_who_we_are_title.0}}</a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="contact-info-section border-none no-padding-bottom no-margin-bottom list-style-2">
+                                {{ content.field_business_hours.0 }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ <!--#Our maps  start -->
+<section class="py_map_40">
+   <div class="container-fluid p0">
+      <div id="contatti" class=" maps">
+           {{ content.field_ma.0 }}        
+      </div>
+   </div>
+</section>
+
+  <!--#End maps   -->

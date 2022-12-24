@@ -1,0 +1,20 @@
+    {{ content.field_banner_image.0 }} 
+    <section class="blog-details-area  wow fadeInUp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-xs-12 col-md-offset-1">
+                        <div class="blog-details-wrap">
+                            <div class="blog-details-img">
+                                <img src="{{ file_url(content.field_blog_image['#items'].entity.uri.value) }}" alt="">
+                            </div>
+                            <div class="blog-details-content wow fadeInUp">
+                                {{content.body.0}}
+                            </div>
+                            <div class="comment-main wow fadeInUp">
+                             {{content.field_comments}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+    </section>

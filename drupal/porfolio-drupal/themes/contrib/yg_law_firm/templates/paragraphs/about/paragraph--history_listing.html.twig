@@ -1,0 +1,60 @@
+{% if 'right'  in content.field_history_style.0  %}   
+         <li  class="wow fadeInUp mt-50">
+                     <div class="timeline-badge">
+                        <a><i class="fa fa-circle" id=""></i></a>
+                     </div>
+                     <div class="timeline-panel">
+                        <div class="timeline-body">
+                           <img src="{{ file_url(content.field_capability_bg_image['#items'].entity.uri.value) }}">
+                           
+                        </div>
+                        <div class="timeline-footer">
+                           <h1>
+                              {{ content.field_about_us_title.0 }}  
+                           </h1>
+                           <p class="c_f">{{ content.field_who_we_are_desc.0 }}</p>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="timeline-inverted wow fadeInUp">
+                     <div class="timeline-badge">
+                        <a><i class="fa fa-circle invert" id=""></i></a>
+                     </div>
+                     <div class="timeline-panel">
+                        <div class="timeline-body">
+                          
+                           <p class="img_left">  {{ content.field_about_banner_desc.0 }}  </p>
+                        </div>
+                        
+                     </div>
+                  </li>
+
+{% else %}
+                  <li class="wow fadeInUp">
+                     <div class="timeline-badge">
+                        <a><i class="fa fa-circle" id=""></i></a>
+                     </div>
+                     <div class="timeline-panel">
+                        <div class="timeline-body">
+                         
+                           <p class="img_top">   {{ content.field_about_banner_desc.0 }}   </p>
+                        </div>
+                        
+                     </div>
+                  </li>
+                  <li class="timeline-inverted  wow fadeInUp">
+                     <div class="timeline-badge">
+                        <a><i class="fa fa-circle invert" id=""></i></a>
+                     </div>
+                     <div class="timeline-panel">
+                        <div class="timeline-body">
+                           <img src="{{ file_url(content.field_capability_bg_image['#items'].entity.uri.value) }} ">
+                           
+                        </div>
+                        <div class="timeline-footer">
+                           <h1> {{ content.field_about_us_title.0 }}   </h1>
+                           <p class="c_f">{{ content.field_who_we_are_desc.0 }} </p>
+                        </div>
+                     </div>
+                  </li>
+{% endif %}

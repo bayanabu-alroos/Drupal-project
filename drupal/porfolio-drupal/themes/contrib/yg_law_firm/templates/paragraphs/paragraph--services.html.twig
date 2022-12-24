@@ -1,0 +1,18 @@
+<!-- #service Area start -->
+      <div  id="about"  class=" py-70 bg_gradient_team">
+         <div class="container">
+            <div class="row text-center mb-60 ">
+               <div class="title wow fadeInUp">
+                  <h1>{{ content.field_services_title.0 }}</h1>
+                  <div class="hed_img"> 
+                     <img src="{{ file_url(content.field_about_image['#items'].entity.uri.value) }}">
+                  </div>
+                  <p class="tagline"> {{ content.field_services_tagline.0}}  </p>
+               </div>
+            </div>
+            <div class="row about_row  py-40">
+            {{ content.field_services_list}}
+            </div>
+         </div>
+      </div>
+      <!-- End About Us Area -->

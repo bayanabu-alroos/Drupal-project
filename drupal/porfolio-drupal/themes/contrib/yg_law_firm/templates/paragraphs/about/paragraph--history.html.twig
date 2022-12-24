@@ -1,0 +1,21 @@
+ <!-- #The History Us Area Start -->
+      <section class="">
+         <div class="container">
+            <div class="row text-center  ">
+               <div class="title wow fadeInUp">
+                  <h1>{{ content.field_page_title.0 }}</h1>
+                  <div class="hed_img"> 
+                     <img src="{{ file_url(content.field_about_bg_image['#items'].entity.uri.value) }}">
+                  </div>
+                  <p> {{ content.field_experienced_desc.0 }}  </p>
+               </div>
+            </div>
+            <div class="row mt-100">
+               <ul class="timeline">
+                     {{ content.field_history_list }}
+                  <li class="clearfix no-float"></li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <!-- #History Us Area End -->

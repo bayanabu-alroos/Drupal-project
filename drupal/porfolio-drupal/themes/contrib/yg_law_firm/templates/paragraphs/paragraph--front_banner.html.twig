@@ -1,0 +1,25 @@
+
+          <div class="bg-banner-img clip-ellipse" style="background-image:url('{{ file_url(content.field_banner_bg['#items'].entity.uri.value) }}');">
+            <div class="ovrllay">
+            <section id="banner" class="pb_0" >
+               <div class="container ">
+                  <div class="row">
+                     <!-- #banner-text start -->            
+                     <div id="banner-text" class="col-md-12 text-c  ">
+                        <div class="left-borders">
+                           <p  class="banner-text wow fadeInUp main-h3" data-wow-delay="0.8s"> {{ content.field_sub_title.0 }} </p>
+                           <h5 class="wow fadeInUp main-h" data-wow-delay="0.2s" >{{ content.field_banner_title.0 }}</h5>
+                        </div>
+                        <p class="banner-text wow fadeInUp main-h3" data-wow-delay="0.8s">{{ content.field_banner_desc.0 }} </p>
+                     </div>
+                     <!-- /#banner-text End -->
+                  </div>
+                  <div class="row mt-100 p-0">
+                     <!--#about-text start -->                      
+                     {{ content.field_about_section }}
+                     <!--#End about-text  --> 
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>

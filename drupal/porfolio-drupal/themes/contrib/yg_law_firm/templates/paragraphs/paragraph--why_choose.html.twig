@@ -1,0 +1,36 @@
+<!--start Why Choose Us Area -->
+      <section class="bg_gradient_team">
+         <div class="container">
+            <div class="row text-center  ">
+               <div class="title wow fadeInUp">
+                  <h1>{{ content.field_about_us_title.0 }}</h1>
+                  <div class="hed_img"> 
+                     <img src="{{ file_url(content.field_capability_bg_image['#items'].entity.uri.value) }}">
+                  </div>
+                  <p class="tagline"> {{ content.field_banner_desc.0 }}  </p>
+               </div>
+            </div>
+          
+            <div class="row about_row ">
+               <div class="divTable">
+                  <div class="divTableBody">
+                  <div class="divTableRow">
+
+                  <div class="divTableCell text-right">
+                     {{ content.field_why_choose_listing }}                   
+                  </div>
+
+                <div class="divTableCell text-center"> <img src="{{ file_url(content.field_about_right_image['#items'].entity.uri.value) }}" align="middle"></div>
+
+                 <div class="divTableCell ">
+                  {{ content.field_why_choose_right_image}}
+                 </div>   
+                 
+                </div>
+                </div>
+              </div>
+            </div>
+      
+         </div>
+      </section>
+    
